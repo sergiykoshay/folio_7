@@ -1,0 +1,33 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal; }
+
+.nav-box {
+  background-color: #633b63;
+  height: 40px; }
+
+.nav {
+  display: inline-flex;
+  height: 40px;
+  width: 100%; }
+  .nav-link {
+    font-style: bold;
+    color: #ffffff;
+    line-height: 40px;
+    padding: 20px;
+    text-decoration: none; }
+    .nav-link:hover {
+      color: #fbfbfb; }
+
+.contact {
+  color: #aca8bf;
+  font-style: bold;
+  line-height: 40px;
+  text-decoration: none;
+  display: inline-flex; }
+  .contact-item {
+    padding: 0 10px; }

@@ -1,0 +1,29 @@
+.container-fluid
+   .row.nav-box
+        .col-lg-4.col-xs-12.col-lg-offset-2
+            ul.nav
+                each val, index in ['О компании', 'Новости', 'Галерея', 'Отзывы', 'Контакты']
+                    li.nav-item
+                        a(href = '#').nav-link
+                            = val
+        .col-lg-2.col-xs-12
+            ul.contact
+                li.contact-item  +38 (067) 250-49-39
+                li.contact-item kari-san@ukr.net
+        .col-lg-offset-1.col-lg-1.col-xs-6
+            ul.lang
+                li.lang-item.active Рус
+                li.lang-item Укр
+        .col-lg-1.col-xs-6
+            ul.curr
+                li.curr-item.active Usd
+                li.curr-item eur
+                li.curr-item rur
+.container
+    .row
+        .col-lg-1
+            .logo
+                img(src="img/logo.jpg", alt="Kari-san", srcset="")
+
+        
+
