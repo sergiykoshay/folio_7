@@ -21,9 +21,34 @@
                 li.curr-item rur
 .container
     .row
-        .col-lg-1
+        .col-lg-2
             .logo
-                img(src="img/logo.jpg", alt="Kari-san", srcset="")
-
-        
+                img(src="img/logo-kari-san.jpg", alt="Kari-san", srcset="img/logo-kari-san@2x.jpg 800w, img/logo-kari-san@3x.jpg 1200w")
+        .col-lg-10
+            .row
+                .col-md-9
+                    form(action="", method="get").search
+                        input#search(type="text", name="search", placeholder="Что вы ищете?").search__field
+                        button(type="submit").search__submit
+                            i(aria-hidden="true").fa.fa-2x.fa-search
+                .col-md-2
+                    .user
+                        a(href="#")
+                            i(aria-hidden="true").fa.fa-3x.fa-heart
+                            span.num 3
+                        a(href="#")
+                            i(aria-hidden="true").fa.fa-3x.fa-shopping-cart
+                            span.num 4
+                        a(href="#")
+                            i(aria-hidden="true").fa.fa-3x.fa-user
+            .row
+                .col-lg-12.col-md-12
+                    hr.nav-hr
+            .row
+                .col-md-12
+                    ul.cat
+                        each cat in ["постельное белье", "полотенца", "одеяла", "наматрасними", "покрывала" , "подушки" ]
+                            li.cat-item
+                                a(href="#")
+                                    = cat
 
