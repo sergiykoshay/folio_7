@@ -11,7 +11,22 @@ body{
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
+    //overflow: hidden;
 }
+.no-padding{
+    padding: 0;
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
 .nav-box{
     background-color: $color-1;
     height: 40px;
@@ -21,17 +36,24 @@ body{
     display: inline-flex;
     height: 40px;
     width: 100%;
-    
+    margin-bottom: 16px;
     &-item{
-
+        &:first-child{
+            padding-left: 0;
+            margin-left: -15px;
+        }
     }
 
     &-link{
-        font-style: bold;
+        
+        display: inline;
         color: #ffffff;
+
         line-height: 40px;
         padding: 20px;
         text-decoration: none;
+        font-weight: 900;
+
 
 
         &:hover{
@@ -58,8 +80,8 @@ body{
 
 .logo{
     & img{
-    width: 192px;
-    height: 172px;
+    width: 164px;
+    height: 119px;
     }
 }
 
@@ -96,7 +118,7 @@ body{
 .user{
     display: flex;
     a{
-        padding: 0 20%;
+        padding: 0 15px;
         color: #ddd;
         position: relative;
         display: block;
@@ -131,6 +153,7 @@ body{
             padding: 12px 20px;
             text-transform: uppercase;
             font-size: 16px;
+            font-weight: 400;
             color: #aca8bf;
         }
     }
@@ -139,6 +162,11 @@ body{
 .custom-select {
     position: relative;
     font-family: Arial;
+    font-weight: 600;
+    height:35px;
+    padding: 0;
+    line-height: 38px;
+    border: none;
     & select{
         display: none;
     }
@@ -148,26 +176,30 @@ body{
     background-color: $color-1;
     &:after{
         position: absolute;
-        content: "";
-        top: 14px;
-        right: 10px;
+        font-family: "FontAwesome";
+        content: '\f107';
+        top: -0px;
+        right: 18px;
         width: 0;
         height: 0;
-        border: 6px solid transparent;
-        border-color: #fff transparent transparent transparent;
-        &.select-arrow-active:after{
-            border-color: transparent transparent #fff transparent;
-            top: 7px;
-            position: absolute;
-            z-index: 101;
-        }
+        //border: 6px solid transparent;
+        //border-color: #fff transparent transparent transparent;
+
     }
+    &.select-arrow-active:after{
+        font-family: "FontAwesome";
+        content: '\f106';
+        line-height: 40px;
+        top: 0;
+        position: absolute;
+        z-index: 101;
+        }
 }
 
 
 .select-items div,.select-selected {
     color: #ffffff;
-    padding: 8px 16px;
+    padding: 0 16px;
     border: 1px solid transparent;
     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
     cursor: pointer;
@@ -187,4 +219,67 @@ body{
   }
 .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .carousel-indicators{
+    justify-content: flex-start;
+    margin-left: 30px;
+    left: 0;
+    bottom: 0;
+    & li{
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    background-color: #fff;
+      &.active{
+        background-color: purple;
+      }
+  }}
+  
+  .carousel-caption{
+  text-align: left;
+  left: 0;
+  justify-content: flex-start;
+    
+    //bottom: initial;
+    padding: 0 30px;
+    h2{
+  
+      font-size: 30px;
+      font-weight: 800;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #633b63;
+      margin: 0 0 15px;
+      text-transform: uppercase;
+      text-align: left;
+      
+    }
+    p{
+      font-size: 20px;
+      color: #1a1a1a;
+      margin-bottom: 60px;
+    }
+  }
+  
+  .btn-custom{
+    text-transform: uppercase;
+    &--slider{        
+      width:263px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      height:60px;
+      border-radius:60px;
+      background-color:#e83c4d;
+      font-size:16px;
+      font-weight:700;
+      text-align:center;
+      color:#ffffff;
+      text-transform:uppercase;
+      transition:.3s;
+      border: none;
+    }
   }
