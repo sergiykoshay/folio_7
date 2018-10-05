@@ -36,8 +36,8 @@ body {
     padding-left: 0; }
 
 .nav-box {
-  background-color: #633b63;
-  height: 40px; }
+  height: 100%;
+  background-color: #fff; }
 
 .nav {
   display: inline-flex;
@@ -74,29 +74,28 @@ body {
   .contact-item {
     padding: 0 10px; }
 
-.logo {
-  padding: 15px 0; }
-  .logo img {
-    width: 164px;
-    height: 119px; }
+.logo img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: -10% 0 0 0; }
 
 .search {
   position: relative;
-  display: inline; }
+  display: none; }
   .search-page-link {
     position: absolute;
     color: #633b63;
     top: 0;
     right: 0;
     padding: 10px 25px;
-    z-index: 300;
-    display: none; }
+    z-index: 300; }
   .search__field {
     height: 50px;
     border-radius: 60px;
     background-color: #f6f6fb;
     border: none;
-    min-width: 650px;
+    min-width: 600px;
     padding-left: 20px;
     outline: none;
     outline-offset: 0; }
