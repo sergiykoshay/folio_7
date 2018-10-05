@@ -1,0 +1,20 @@
+  
+  .btn-custom{
+    text-transform: uppercase;
+    &--slider{        
+      width:263px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      height:60px;
+      border-radius:60px;
+      background-color:#e83c4d;
+      font-size:16px;
+      font-weight:700;
+      text-align:center;
+      color:#ffffff;
+      text-transform:uppercase;
+      transition:.3s;
+      border: none;
+    }
+  }

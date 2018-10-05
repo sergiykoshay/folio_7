@@ -34,13 +34,17 @@ body{
 
 .nav{
     display: inline-flex;
-    height: 40px;
+    height: 100%;
     width: 100%;
     margin-bottom: 16px;
     &-item{
         &:first-child{
+            text-align: left;
+        }
+       
+        &:first-child .nav-link{
             padding-left: 0;
-            margin-left: -15px;
+            margin-left: 0;
         }
     }
 
@@ -48,21 +52,23 @@ body{
         
         display: inline;
         color: #ffffff;
-
         line-height: 40px;
         padding: 20px;
         text-decoration: none;
         font-weight: 900;
-
-
-
         &:hover{
             color: #fbfbfb;
         }
     }
-
-
 }
+.navbar-toggler>.close {
+    display:inline;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+
+
 .contact{
     color: #aca8bf;
     font-style: bold;
@@ -79,6 +85,7 @@ body{
 }
 
 .logo{
+    padding: 15px 0;
     & img{
     width: 164px;
     height: 119px;
@@ -88,28 +95,50 @@ body{
 .search{
     position: relative;
     display: inline;
+    &-page-link{
+        position: absolute;
+        color: $color-1;
+        top: 0;
+        right: 0;
+        padding: 10px 25px;
+        z-index: 300;
+        display: none;
+
+ 
+    }
     &__field{
         height: 50px;
         border-radius: 60px;
         background-color: #f6f6fb;
         border: none;
-        width: 100%;
+        min-width: 650px;
         padding-left: 20px;
         outline: none;
         outline-offset: 0;
+        
 
     }
 
     &__submit{
         position: absolute;
-        top: -5px;
-        right: 0;
+        top: 0px;
+        right: 0px;
         background-color: transparent;
         border: none;
         outline: none;
+        height: 50px;
+        border-radius: 0 50px 50px 0;
+        background-color: #fff;
+        &:hover{
+            background-color: #633b63;
+        }
+        &:hover i{
+            color: #fff;
+            transition: .4s color linear; 
+        }
         & i{
             color:#633b63;
-            padding: 0 15px;
+            padding: 0 5px;
             
         }
     }
@@ -117,16 +146,21 @@ body{
 
 .user{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px 0 0 0;
+    
     a{
         padding: 0 15px;
         color: #ddd;
         position: relative;
         display: block;
         text-decoration: none;
+        margin: 0 15px;
         .num{
             position: absolute;
-            right: 10px;
-            top: 6px;
+            right: -10px;
+            top: 0px;
             color: #fff;
             background-color: red;
             display: block;
@@ -143,6 +177,7 @@ body{
 .nav-hr{
     height: 2px;
     width: 100%;
+    margin: 0;
 }
 
 .cat{
@@ -150,11 +185,14 @@ body{
         display: inline-flex;
         justify-content: center;
         & a{
-            padding: 12px 20px;
+            padding: 12px 13px;
             text-transform: uppercase;
             font-size: 16px;
             font-weight: 400;
             color: #aca8bf;
+            &:hover{
+                color:#1a1a1a;
+            }
         }
     }
 }
@@ -165,8 +203,10 @@ body{
     font-weight: 600;
     height:35px;
     padding: 0;
+    margin: 0 15px;
     line-height: 38px;
     border: none;
+    width: auto;
     & select{
         display: none;
     }
@@ -179,11 +219,10 @@ body{
         font-family: "FontAwesome";
         content: '\f107';
         top: -0px;
-        right: 18px;
+        right: 8px;
         width: 0;
         height: 0;
-        //border: 6px solid transparent;
-        //border-color: #fff transparent transparent transparent;
+
 
     }
     &.select-arrow-active:after{
@@ -223,16 +262,21 @@ body{
 
   .carousel-indicators{
     justify-content: flex-start;
-    margin-left: 30px;
+    position: relative;
+    margin: 0 auto -100% auto;
+
+    bottom: 25px;
+    width: 100%;
     left: 0;
-    bottom: 0;
     & li{
-    height: 12px;
-    width: 12px;
-    border-radius: 100%;
-    background-color: #fff;
+        height: 12px;
+        width: 12px;
+        border-radius: 100%;
+        background-color: #fff;
+        cursor: pointer;
+
       &.active{
-        background-color: purple;
+        background-color: $color-1;
       }
   }}
   
@@ -240,9 +284,6 @@ body{
   text-align: left;
   left: 0;
   justify-content: flex-start;
-    
-    //bottom: initial;
-    padding: 0 30px;
     h2{
   
       font-size: 30px;
@@ -263,23 +304,4 @@ body{
       margin-bottom: 60px;
     }
   }
-  
-  .btn-custom{
-    text-transform: uppercase;
-    &--slider{        
-      width:263px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      height:60px;
-      border-radius:60px;
-      background-color:#e83c4d;
-      font-size:16px;
-      font-weight:700;
-      text-align:center;
-      color:#ffffff;
-      text-transform:uppercase;
-      transition:.3s;
-      border: none;
-    }
-  }
+

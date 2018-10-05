@@ -5,8 +5,78 @@
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+    .nav-box{
+        height: 100%;
+        background-color: #fff;
+    }
+    .nav{
+        display: flex;
+        z-index: 200;
+        height: auto;
+        width: 100%;
+        margin-bottom: 16px;
+        justify-content: flex-start;
+        &-item{
+            &:first-child{
+                padding-left: 0;
+                margin-left: -15px;
+                text-align: center;
+            }
+        }
+        &-box{
+            height: 100%;
+        }
+        &-link{
+            color: $color-1;
+        }
+
+        }
+   
+
+    .search{
+          display: none;
+          &-page-link{
+              display: block;
+          }
+    }
+    .logo{
+        
+        & img{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: -10% 0 0 0;
+        }
+    }
+
+    .custom-select{
+
+        display: inline;
+    }
+
+    .nav-hr{
+        display: none;
+    
+    }
+
+    .cat{
+        &-button{
+            position: absolute;
+            top: 0%;
+            right: 0;
+        }
+        &-item{
+            width: 100%;
+        }
+    }
+    .user{
+        justify-content: flex-start;
+    }
+
 
 }
+
+
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {

@@ -1,3 +1,21 @@
+.btn-custom {
+  text-transform: uppercase; }
+  .btn-custom--slider {
+    width: 263px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #e83c4d;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: .3s;
+    border: none; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -23,12 +41,14 @@ body {
 
 .nav {
   display: inline-flex;
-  height: 40px;
+  height: 100%;
   width: 100%;
   margin-bottom: 16px; }
   .nav-item:first-child {
+    text-align: left; }
+  .nav-item:first-child .nav-link {
     padding-left: 0;
-    margin-left: -15px; }
+    margin-left: 0; }
   .nav-link {
     display: inline;
     color: #ffffff;
@@ -39,6 +59,12 @@ body {
     .nav-link:hover {
       color: #fbfbfb; }
 
+.navbar-toggler > .close {
+  display: inline; }
+
+.navbar-toggler.collapsed > .close, .navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
+  display: none; }
+
 .contact {
   color: #aca8bf;
   font-style: bold;
@@ -48,45 +74,67 @@ body {
   .contact-item {
     padding: 0 10px; }
 
-.logo img {
-  width: 164px;
-  height: 119px; }
+.logo {
+  padding: 15px 0; }
+  .logo img {
+    width: 164px;
+    height: 119px; }
 
 .search {
   position: relative;
   display: inline; }
+  .search-page-link {
+    position: absolute;
+    color: #633b63;
+    top: 0;
+    right: 0;
+    padding: 10px 25px;
+    z-index: 300;
+    display: none; }
   .search__field {
     height: 50px;
     border-radius: 60px;
     background-color: #f6f6fb;
     border: none;
-    width: 100%;
+    min-width: 650px;
     padding-left: 20px;
     outline: none;
     outline-offset: 0; }
   .search__submit {
     position: absolute;
-    top: -5px;
-    right: 0;
+    top: 0px;
+    right: 0px;
     background-color: transparent;
     border: none;
-    outline: none; }
+    outline: none;
+    height: 50px;
+    border-radius: 0 50px 50px 0;
+    background-color: #fff; }
+    .search__submit:hover {
+      background-color: #633b63; }
+    .search__submit:hover i {
+      color: #fff;
+      transition: .4s color linear; }
     .search__submit i {
       color: #633b63;
-      padding: 0 15px; }
+      padding: 0 5px; }
 
 .user {
-  display: flex; }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px 0 0 0; }
   .user a {
     padding: 0 15px;
     color: #ddd;
     position: relative;
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    margin: 0 15px; }
     .user a .num {
       position: absolute;
-      right: 10px;
-      top: 6px;
+      right: -10px;
+      top: 0px;
       color: #fff;
       background-color: red;
       display: block;
@@ -98,17 +146,20 @@ body {
 
 .nav-hr {
   height: 2px;
-  width: 100%; }
+  width: 100%;
+  margin: 0; }
 
 .cat-item {
   display: inline-flex;
   justify-content: center; }
   .cat-item a {
-    padding: 12px 20px;
+    padding: 12px 13px;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 400;
     color: #aca8bf; }
+    .cat-item a:hover {
+      color: #1a1a1a; }
 
 .custom-select {
   position: relative;
@@ -116,8 +167,10 @@ body {
   font-weight: 600;
   height: 35px;
   padding: 0;
+  margin: 0 15px;
   line-height: 38px;
-  border: none; }
+  border: none;
+  width: auto; }
   .custom-select select {
     display: none; }
 
@@ -128,7 +181,7 @@ body {
     font-family: "FontAwesome";
     content: '\f107';
     top: -0px;
-    right: 18px;
+    right: 8px;
     width: 0;
     height: 0; }
   .select-selected.select-arrow-active:after {
@@ -163,22 +216,24 @@ body {
 
 .carousel-indicators {
   justify-content: flex-start;
-  margin-left: 30px;
-  left: 0;
-  bottom: 0; }
+  position: relative;
+  margin: 0 auto -100% auto;
+  bottom: 25px;
+  width: 100%;
+  left: 0; }
   .carousel-indicators li {
     height: 12px;
     width: 12px;
     border-radius: 100%;
-    background-color: #fff; }
+    background-color: #fff;
+    cursor: pointer; }
     .carousel-indicators li.active {
-      background-color: purple; }
+      background-color: #633b63; }
 
 .carousel-caption {
   text-align: left;
   left: 0;
-  justify-content: flex-start;
-  padding: 0 30px; }
+  justify-content: flex-start; }
   .carousel-caption h2 {
     font-size: 30px;
     font-weight: 800;
@@ -194,21 +249,3 @@ body {
     font-size: 20px;
     color: #1a1a1a;
     margin-bottom: 60px; }
-
-.btn-custom {
-  text-transform: uppercase; }
-  .btn-custom--slider {
-    width: 263px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    border-radius: 60px;
-    background-color: #e83c4d;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    transition: .3s;
-    border: none; }

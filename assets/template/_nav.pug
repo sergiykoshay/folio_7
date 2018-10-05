@@ -1,0 +1,73 @@
+a(href="#").search-page-link
+    i.fa.fa-2x.fa-search
+nav.navbar.navbar-expand-lg.nav-box.nav-fill
+  button#burger.navbar-toggler(type='button', data-toggle='collapse', data-target='#nav', aria-controls='nav', aria-expanded='false', aria-label='Toggle navigation')
+    span.mx-1.mx-2.close
+        i.fa.fa-times
+    span.navbar-toggler-icon
+        i.fa.fa-bars
+  #nav.navbar-collapse
+    .container.no-padding
+        .row.no-gutters
+            .col-lg-12.col-xs-12
+                ul.navbar-nav.mr-auto                       
+                    each val, index in ['О компании', 'Новости', 'Галерея', 'Отзывы', 'Контакты']
+                        li.nav-item
+                            a(href = '#').nav-link
+                                = val
+                    li.nav-item
+                        a.nav-link.disabled(href='tel:+380672504939') +38 (067) 250-49-39 
+                    li.nav-item
+                        a.nav-link.disabled(href='mailto:kari-san@ukr.net' target='_blank') kari-san@ukr.net 
+                    li.nav-item.custom-select
+                        select#lang(name="lang")
+                            option(value="0") UA
+                            option(value="1") RU
+                    li.nav-item.custom-select
+                        select#curr(name="curr")
+                            option(value="12") UAH
+                            option(value="13") USD
+                            option(value="13") EUR
+.container.no-padding
+    .row
+        .col-md-2.col-lg-2.col-xs-12
+            .logo
+                img(src="img/logo-kari-san.jpg", alt="Kari-san", srcset="img/logo-kari-san@2x.jpg 800w, img/logo-kari-san@3x.jpg 1200w")
+        .col-md-10.col-lg-10.col-xs-12
+            .container.no-padding
+                .row.no-gutters
+                    .col-md-12.col-lg-12
+                        nav.navbar.navbar-light.nav
+                            ul.navbar-nav.user
+                                form.form-inline.my-2.my-lg-0.search
+                                    input.form-control(type='search', placeholder='Что вы ищете?', aria-label='Search').search__field
+                                    button.btn.btn-outline-success.my-2.my-sm-0(type='submit').search__submit
+                                        i(aria-hidden="true").fa.fa-2x.fa-search
+                                li.nav-item.pull-right
+                                    a.nav-link(href='#')
+                                        i.fa.fa-3x.fa-shopping-cart
+                                        span.num 3
+                                li.nav-item
+                                    a.nav-link(href='#')
+                                        i.fa.fa-3x.fa-heart
+                                        span.num 3
+                                li.nav-item
+                                    a.nav-link(href='#')
+                                        i.fa.fa-3x.fa-user
+                                        span.num 3
+                .row.no-gutters
+                    hr.nav-hr
+                    nav.navbar.navbar-expand-lg.navbar-light
+                        a.navbar-brand(href='#') Категории
+                        button.cat-button.navbar-toggler(type='button', data-toggle='collapse', data-target='#cat', aria-expanded='false', aria-label='Toggle category')
+                            span
+                                i.fa.fa-th
+                        #cat.collapse.navbar-collapse
+                            ul.cat.navbar-nav.mr-auto
+                            each cat in ["постельное белье", "полотенца", "одеяла", "наматрасники", "покрывала" , "подушки" ]
+                                li.cat-item.nav-item
+                                    a.nav-link(href="#")
+                                        = cat
+
+
+

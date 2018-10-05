@@ -11,79 +11,76 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <title>Kari-San</title>
-  <body>
-    <div class="container-fluid">
-      <div class="row nav-box">
-        <div class="container">
+  <body><a class="search-page-link" href="#"><i class="fa fa-2x fa-search"></i></a>
+    <nav class="navbar navbar-expand-lg nav-box nav-fill">
+      <button class="navbar-toggler" id="burger" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="mx-1 mx-2 close"><i class="fa fa-times"></i></span><span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span></button>
+      <div class="navbar-collapse" id="nav">
+        <div class="container no-padding">
           <div class="row no-gutters">
-            <div class="col-lg-6 col-xs-12">
-              <ul class="nav">
+            <div class="col-lg-12 col-xs-12">
+              <ul class="navbar-nav mr-auto">                      
                 <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Новости</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Галерея</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                <li class="nav-item"><a class="nav-link disabled" href="tel:+380672504939">+38 (067) 250-49-39 </a></li>
+                <li class="nav-item"><a class="nav-link disabled" href="mailto:kari-san@ukr.net" target="_blank">kari-san@ukr.net </a></li>
+                <li class="nav-item custom-select">
+                  <select id="lang" name="lang">
+                    <option value="0">UA</option>
+                    <option value="1">RU</option>
+                  </select>
+                </li>
+                <li class="nav-item custom-select">
+                  <select id="curr" name="curr">
+                    <option value="12">UAH</option>
+                    <option value="13">USD</option>
+                    <option value="13">EUR</option>
+                  </select>
+                </li>
               </ul>
-            </div>
-            <div class="col-lg-4 col-xs-12">
-              <ul class="contact">
-                <li class="contact-item"> +38 (067) 250-49-39</li>
-                <li class="contact-item">kari-san@ukr.net</li>
-              </ul>
-            </div>
-            <div class="col-lg-1 col-xs-6">
-              <div class="custom-select">
-                <select id="lang" name="lang">
-                  <option value="0">UA</option>
-                  <option value="1">RU</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-lg-1 col-xs-6">
-              <div class="custom-select">
-                <select id="curr" name="curr">
-                  <option value="12">UAH</option>
-                  <option value="13">USD</option>
-                  <option value="13">EUR</option>
-                </select>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
+    </nav>
+    <div class="container no-padding">
       <div class="row">
-        <div class="col-lg-2">
+        <div class="col-md-2 col-lg-2 col-xs-12">
           <div class="logo"><img src="img/logo-kari-san.jpg" alt="Kari-san" srcset="img/logo-kari-san@2x.jpg 800w, img/logo-kari-san@3x.jpg 1200w"></div>
         </div>
-        <div class="col-lg-10">
-          <div class="row no-gutter">
-            <div class="col-md-9">
-              <form class="search" action="" method="get">
-                <input class="search__field" id="search" type="text" name="search" placeholder="Что вы ищете?">
-                <button class="search__submit" type="submit"><i class="fa fa-2x fa-search" aria-hidden="true"></i></button>
-              </form>
+        <div class="col-md-10 col-lg-10 col-xs-12">
+          <div class="container no-padding">
+            <div class="row no-gutters">
+              <div class="col-md-12 col-lg-12">
+                <nav class="navbar navbar-light nav">
+                  <ul class="navbar-nav user">
+                    <form class="form-inline my-2 my-lg-0 search">
+                      <input class="form-control search__field" type="search" placeholder="Что вы ищете?" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0 search__submit" type="submit"><i class="fa fa-2x fa-search" aria-hidden="true"></i></button>
+                    </form>
+                    <li class="nav-item pull-right"><a class="nav-link" href="#"><i class="fa fa-3x fa-shopping-cart"></i><span class="num">3</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-3x fa-heart"></i><span class="num">3</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-3x fa-user"></i><span class="num">3</span></a></li>
+                  </ul>
+                </nav>
+              </div>
             </div>
-            <div class="col-md-3">
-              <div class="user"><a href="#"><i class="fa fa-3x fa-heart" aria-hidden="true"></i><span class="num">3</span></a><a href="#"><i class="fa fa-3x fa-shopping-cart" aria-hidden="true"></i><span class="num">4</span></a><a href="#"><i class="fa fa-3x fa-user" aria-hidden="true"></i></a></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
+            <div class="row no-gutters">
               <hr class="nav-hr">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <ul class="cat">
-                <li class="cat-item"><a href="#">постельное белье</a></li>
-                <li class="cat-item"><a href="#">полотенца</a></li>
-                <li class="cat-item"><a href="#">одеяла</a></li>
-                <li class="cat-item"><a href="#">наматрасники</a></li>
-                <li class="cat-item"><a href="#">покрывала</a></li>
-                <li class="cat-item"><a href="#">подушки</a></li>
-              </ul>
+              <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand" href="#">Категории</a>
+                <button class="cat-button navbar-toggler" type="button" data-toggle="collapse" data-target="#cat" aria-expanded="false" aria-label="Toggle category"><span><i class="fa fa-th"></i></span></button>
+                <div class="collapse navbar-collapse" id="cat">
+                  <ul class="cat navbar-nav mr-auto"></ul>
+                  <li class="cat-item nav-item"><a class="nav-link" href="#">постельное белье</a></li>
+                  <li class="cat-item nav-item"><a class="nav-link" href="#">полотенца</a></li>
+                  <li class="cat-item nav-item"><a class="nav-link" href="#">одеяла</a></li>
+                  <li class="cat-item nav-item"><a class="nav-link" href="#">наматрасники</a></li>
+                  <li class="cat-item nav-item"><a class="nav-link" href="#">покрывала</a></li>
+                  <li class="cat-item nav-item"><a class="nav-link" href="#">подушки</a></li>
+                </div>
+              </nav>
             </div>
           </div>
         </div>
@@ -93,31 +90,53 @@
       <div class="row no-gutters">
         <div class="col-xs-12 col md-12 col-lg-12">
           <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
             <div class="carousel-inner">
               <div class="carousel-item active"><img class="d-block w-100" src="img/slide-320w.jpg" alt="Постельное белье" srcset="img/slider-320w.jpg, img/slider-768w.jpg, img/slider-1920w" sizes="(max-width: 320px) 280px, (max-width: 800px) 1200px, 1920px">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2>Качественое постельное белье</h2>
-                  <p>Обеспечь комфортный сон себе и своей семье</p>
-                  <p><a class="btn btn-large btn-primary btn-custom btn-custom--slider" href="#">Приобрести</a></p>
+                <div class="container no-padding">
+                  <div class="row no-gutters">
+                    <div class="col-md-12 col-lg-12">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h2>Качественое постельное белье</h2>
+                        <p>Обеспечь комфортный сон себе и своей семье</p>
+                        <p><a class="btn btn-large btn-primary btn-custom btn-custom--slider" href="#">Приобрести</a></p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="carousel-item"><img class="d-block w-100" src="img/slide-320w.jpg" alt="Постельное белье" srcset="img/slider-320w.jpg, img/slider-768w.jpg, img/slider-1920w" sizes="(max-width: 320px) 280px, (max-width: 800px) 1200px, 1920px">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2>Качественое постельное белье</h2>
-                  <p>Обеспечь комфортный сон себе и своей семье</p>
-                  <p><a class="btn btn-large btn-primary btn-custom btn-custom--slider" href="#">Приобрести</a></p>
+                <div class="container no-padding">
+                  <div class="row no-gutters">
+                    <div class="col-md-12 col-lg-12">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h2>Качественое постельное белье</h2>
+                        <p>Обеспечь комфортный сон себе и своей семье</p>
+                        <p><a class="btn btn-large btn-primary btn-custom btn-custom--slider" href="#">Приобрести</a></p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="carousel-item"><img class="d-block w-100" src="img/slide-320w.jpg" alt="Постельное белье" srcset="img/slider-320w.jpg, img/slider-768w.jpg, img/slider-1920w" sizes="(max-width: 320px) 280px, (max-width: 800px) 1200px, 1920px">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2>Качественое постельное белье</h2>
-                  <p>Обеспечь комфортный сон себе и своей семье</p>
-                  <p><a class="btn btn-large btn-primary btn-custom btn-custom--slider" href="#">Приобрести</a></p>
+                <div class="container no-padding">
+                  <div class="row no-gutters">
+                    <div class="col-md-12 col-lg-12">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h2>Качественое постельное белье</h2>
+                        <p>Обеспечь комфортный сон себе и своей семье</p>
+                        <p><a class="btn btn-large btn-primary btn-custom btn-custom--slider" href="#">Приобрести</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <ol class="carousel-indicators">
+                    <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
                 </div>
               </div>
             </div>
