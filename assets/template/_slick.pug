@@ -1,0 +1,18 @@
+-var cat = ['Полотенца','Покрывала','Подушки','Одеяла','Постельное белье'];
+-var count = ['23','11','5','45','3'];
+-var img = ["https://kari-san.com/image/cache/catalog/category/category3-280x280.png","https://kari-san.com/image/cache/catalog/category/category2-280x280.png","https://kari-san.com/image/cache/catalog/category/category1-280x280.png","https://kari-san.com/image/cache/catalog/category/category4-280x280.png","https://kari-san.com/image/cache/catalog/category/category5-280x280.png"];
+-var img_hover = ["https://kari-san.com/image/cache/catalog/category/category_hover1-280x280.png","https://kari-san.com/image/cache/catalog/category/category_hover2-280x280.png","https://kari-san.com/image/cache/catalog/category/category_hover3-280x280.png","https://kari-san.com/image/cache/catalog/category/category_hover4-280x280.png","https://kari-san.com/image/cache/catalog/category/category_hover5-280x280.png"];
+
+.container-fluid.no-padding
+  .row.no-gutters
+    .col-md-12
+      .slick-slider#hover
+        each val,index in count
+          .slick-slider-item
+            .count 
+                span= val
+            img(src=img[index], alt=cat[index])
+            p= cat[index]
+            .hover-img
+                img(src=img_hover[index], alt=cat[index])
+      
