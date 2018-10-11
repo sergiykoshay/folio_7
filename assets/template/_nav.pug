@@ -1,7 +1,7 @@
 a(href="#").search-page-link
     i.fa.fa-2x.fa-search
 nav.navbar.navbar-expand-lg.nav-box.nav-fill
-  button#burger.navbar-toggler(type='button', data-toggle='collapse', data-target='#nav', aria-controls='nav', aria-expanded='false', aria-label='Toggle navigation')
+  button#burger.navbar-toggler.collapsed(type='button', data-toggle='collapse', data-target='#nav', aria-controls='nav', aria-expanded='false', aria-label='Toggle navigation')
     span.mx-1.mx-2.close
         i.fa.fa-times
     span.navbar-toggler-icon
@@ -34,7 +34,7 @@ nav.navbar.navbar-expand-lg.nav-box.nav-fill
             .logo
                 img(src="img/logo-kari-san.jpg", alt="Kari-san", srcset="img/logo-kari-san@2x.jpg 800w, img/logo-kari-san@3x.jpg 1200w")
         .col-md-10.col-lg-10.col-xs-12
-            .container.no-padding
+            .container.no-padding#sticky
                 .row.no-gutters
                     .col-md-12.col-lg-12
                         nav.navbar.navbar-light.nav
@@ -57,7 +57,7 @@ nav.navbar.navbar-expand-lg.nav-box.nav-fill
                                         span.num 3
                 .row.no-gutters
                     hr.nav-hr
-                    nav.navbar.navbar-expand-lg.navbar-light
+                    nav.navbar.navbar-expand-lg.navbar-light.cat-box
                         a.navbar-brand(href='#') Категории
                         button.cat-button.navbar-toggler(type='button', data-toggle='collapse', data-target='#cat', aria-expanded='false', aria-label='Toggle category')
                             span

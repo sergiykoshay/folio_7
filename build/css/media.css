@@ -30,12 +30,37 @@
     display: none; }
   .cat-button {
     position: absolute;
-    top: 0%;
+    top: 21%;
     right: 0; }
   .cat-item {
     width: 100%; }
+  .cat-box {
+    position: absolute;
+    right: 5%;
+    top: -16%;
+    z-index: 601; }
   .user {
-    justify-content: flex-start; } }
+    justify-content: flex-start;
+    padding: 0; }
+    .user a {
+      font-size: .6em;
+      margin: 0 6px; }
+  .navbar-brand {
+    padding-right: 30px; }
+  .cart-slider-header {
+    text-align: left; }
+  .prev, .next {
+    top: -90px; }
+  .dots {
+    top: 100%; }
+  .sticky {
+    position: fixed;
+    z-index: 600;
+    top: 0;
+    background-color: #fff;
+    height: 40px; }
+  .cart-item {
+    padding-right: 10px; } }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {

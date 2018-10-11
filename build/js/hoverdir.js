@@ -276,7 +276,7 @@
 if ( jQuery().hoverdir ) {
 	jQuery( '.slick-slider > .slick-slider-item' ).each( function() {
 		jQuery( this ).hoverdir({
-    speed: 500, // Times in ms
+    speed: 400, // Times in ms
     easing: 'ease',
     hoverDelay: 0, // Times in ms
     inverse: false,

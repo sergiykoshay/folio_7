@@ -68,17 +68,51 @@ and (max-width : 320px) {
     .cat{
         &-button{
             position: absolute;
-            top: 0%;
+            top: 21%;
             right: 0;
         }
         &-item{
             width: 100%;
         }
+        &-box{
+            position: absolute;
+            right: 5%;
+            top: -16%;
+            z-index: 601;
+        }
     }
     .user{
         justify-content: flex-start;
+        padding: 0;
+        & a{
+            font-size: .6em;
+            margin: 0 6px;
+
+        }
+    }
+    .navbar-brand{
+        padding-right: 30px; 
+    }
+    .cart-slider-header{
+        text-align: left;
+    }
+    .prev, .next{
+        top:-90px;
+    }
+    .dots{
+        top: 100%;
+    }
+    .sticky{
+        position: fixed;
+        z-index: 600;
+        top: 0;
+        background-color: #fff;
+        height: 40px;
     }
 
+    .cart-item{
+        padding-right: 10px;
+    }
 }
 
 /* iPads (portrait and landscape) ----------- */
