@@ -152,13 +152,18 @@ body {
   display: inline-flex;
   justify-content: center; }
   .cat-item a {
-    padding: 12px 13px;
+    padding: 12px 12px;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 400;
     color: #aca8bf; }
     .cat-item a:hover {
       color: #1a1a1a; }
+
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #aca8bf; }
 
 .custom-select {
   position: relative;

@@ -27,3 +27,27 @@
                   a(href="#").add
                     i.fa.fa-shopping-cart
                   a(href="#").buy Buy now
+.container.no-padding
+  .row.no-gutters
+    .col-lg-4.col-md-3.col-xs-12
+      #dots-2
+    .col-lg-4.col-md-3.col-xs-12
+      h2.cart-slider-header Популярное
+    .col-lg-4.col-md-3.col-xs-12
+      #arrows-2
+  .row.no-gutters.mr-15
+      .cart-slider#cart-slider-2
+        each val,index in count
+           .cart-item
+              .cart-item__box
+                img(src=img[index], alt=cat[index]).cart-item__img
+                .cart-item__description= cat[index]
+                .cart-item__price
+                  span Розничная цена
+                  .price=price[index] + " Грн"
+                .cart-item__bar
+                  a(href="#").fav
+                    i.fa.fa-heart
+                  a(href="#").add
+                    i.fa.fa-shopping-cart
+                  a(href="#").buy Buy now

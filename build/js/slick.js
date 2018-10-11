@@ -24,3 +24,19 @@ $('#cart-slider-1').slick({
        variableWidth: true,
        centerPadding: '50px'
       });
+$('#cart-slider-2').slick({
+    infinite: true,
+        dots: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '<button type="button" class="prev"><i class="fa fa-chevron-left"></i</button>',
+        nextArrow: '<button type="button" class="next"><i class="fa fa-chevron-right"></i</button>',
+        autoPlay: true,
+        appendDots: $('#dots-2'),
+        appendArrows: $('#arrows-2'),
+        dotsClass: 'dots',
+        centerMode: false,
+        variableWidth: true,
+        centerPadding: '50px'
+    });

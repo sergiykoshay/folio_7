@@ -87,6 +87,9 @@ and (max-width : 320px) {
         & a{
             font-size: .6em;
             margin: 0 6px;
+            & .num{
+                font-size: 1.2em;
+            }
 
         }
     }

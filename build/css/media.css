@@ -45,6 +45,8 @@
     .user a {
       font-size: .6em;
       margin: 0 6px; }
+      .user a .num {
+        font-size: 1.2em; }
   .navbar-brand {
     padding-right: 30px; }
   .cart-slider-header {
