@@ -1,0 +1,14 @@
+-var sets = ['award-4.svg','piggy-bank-2.svg','pantone-1.svg','growth.svg'];
+-var text =['Качество пошития','Умная цена','Разнообразие цветов и размеров','Постоянное усовершенствование изделий'];
+.container-fluid.bg--grey
+    .row
+        .col-lg-12
+            .container
+                .row
+                    h2.section-head Наши преимущества
+                .row
+                    each val, index in sets
+                        .col-lg-3.col-md-3.col-xs-12
+                            .circle
+                                img(src="/img/svg/"+sets[index], alt="")
+                                p=text[index]
