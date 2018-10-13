@@ -1,0 +1,21 @@
+-var date = ['15.09.2018','16.09.2018','20.09.2018','29.09.2018'];
+-var name = ['Алла','Маша Кулагинова', 'Юрій Цезаров','Ivan IV Grozniy']
+-var text =['Качество пошития','Умная цена','Разнообразие цветов и размеров','Постоянное усовершенствование изделий'];
+.container-fluid.bg--grey
+    .row
+        .container
+            .row
+                .col-md-4.col.lg-4.col-xs-12
+                    #dots-3
+                .col-md-4.col-lg-4.col-xs-12
+                    h2.section-head Отзывы клиентов
+                .col-md-4.col.lg-4.col-xs-12
+                    #arrows-3
+            .row
+                #respond.respond
+                    each val, index in date
+                        .col-lg-6.col-md-6.col-xs-12
+                            .respond--item
+                                .name=name[index]
+                                .date=date[index]
+                                p=text[index]

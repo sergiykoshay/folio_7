@@ -474,3 +474,29 @@ body {
 .circle:hover img {
   transform: rotateY(360deg);
   transition: .6s transform ease-in; }
+
+.respond {
+  width: 100%; }
+  .respond--item {
+    width: 100%;
+    min-width: 300px;
+    background-color: #fbfbfb;
+    padding: 30px;
+    min-height: 300px;
+    height: auto;
+    text-align: center; }
+    .respond--item .date {
+      font-size: 1.1em;
+      font-weight: 400;
+      padding: 1em;
+      color: #999; }
+      .respond--item .date::before {
+        font-family: "FontAwesome";
+        font-weight: 400;
+        content: '\f017';
+        display: inline-block;
+        padding: 10px 14px;
+        color: #999; }
+    .respond--item .name {
+      font-size: 1.3em;
+      font-style: italic; }

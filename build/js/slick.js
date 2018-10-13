@@ -40,3 +40,20 @@ $('#cart-slider-2').slick({
         variableWidth: true,
         centerPadding: '50px'
     });
+
+    $('#respond').slick({
+            infinite: false,
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 2,
+            arrows: true,
+            prevArrow: '<button type="button" class="prev"><i class="fa fa-chevron-left"></i</button>',
+            nextArrow: '<button type="button" class="next"><i class="fa fa-chevron-right"></i</button>',
+            autoPlay: true,
+            appendDots: $('#dots-3'),
+            appendArrows: $('#arrows-3'),
+            dotsClass: 'dots',
+            centerMode: false,
+            variableWidth: true,
+            centerPadding: '50px'
+        });
