@@ -43,10 +43,23 @@ and (max-width : 320px) {
         &-link{
             color: $color-1;
         }
-
+        &bar-cat{
+            color: $color-1;
+            position: relative;
+            bottom: -30%;
+            right: 0;
+            padding-top: 12px;
+            font: 1.25em sans-serif;
         }
-   
+        }
 
+
+    .logo{
+        & img{
+            width:90px;
+            height: auto;
+        }
+    }
     .search{
           display: none;
           &-page-link{
@@ -64,23 +77,45 @@ and (max-width : 320px) {
         display: none;
     
     }
-
+  
     .cat{
+
         &-button{
-            position: absolute;
-            top: 21%;
+            position: relative;
+            top: 0%;
             right: 0;
+            padding-top: .5em;
         }
         &-item{
             width: 100%;
+            a{
+                width: 100%;
+                text-align: center;
+            }
         }
         &-box{
             position: absolute;
-            right: 5%;
-            top: -16%;
-            z-index: 601;
+            right: 0;
+            top: 0;
+            z-index: 1001;
+        }
+        &-mobile-menu{
+            position: absolute;
+            background-color: #fff;
+            z-index:1000;
+            top: -300%;
+            right: 100%;
+            left: -100%;
+            bottom: 100%;
+            min-width: 100vw;
+            height: 100vh;
+            margin: 0 0 0 -35px;
+            padding: 0 0 0 15px;
+            overflow: hidden;
         }
     }
+
+
     .user{
         justify-content: flex-start;
         padding: 0;
@@ -154,14 +189,17 @@ and (min-width : 1000px) {
     background-color: $color-1;
     height: 40px;
 }
-
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 8px;
+    padding-right: 26px;
+}
 .logo{
     padding: 15px 0;
 
     & img{
         width: 164px;
         height: 119px;
-        margin: 0;
+        margin: 4px;
     }
 }
 .search{
@@ -171,7 +209,9 @@ and (min-width : 1000px) {
     }
 
 }
-
+.navbar-cat{
+    display: none;
+}
 }
 
 /* Large screens ----------- */

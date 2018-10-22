@@ -16,33 +16,39 @@
   <title>Kari-San</title>
   <body><a class="search-page-link" href="#"><i class="fa fa-2x fa-search"></i></a>
     <nav class="navbar navbar-expand-lg nav-box nav-fill">
-      <button class="navbar-toggler collapsed" id="burger" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="mx-1 mx-2 close"><i class="fa fa-times"></i></span><span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span></button>
-      <div class="navbar-collapse" id="nav">
+      <button class="navbar-toggler collapsed" id="burger" type="button" data-toggle="collapse" data-target=".dual-collapse" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="mx-1 mx-2 close"><i class="fa fa-times"></i></span><span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span></button>
+      <div class="navbar-collapse navbar-expand-md" id="nav">
         <div class="container no-padding">
           <div class="row no-gutters">
             <div class="col-lg-12 col-xs-12">
-              <ul class="navbar-nav mr-auto">                      
-                <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Галерея</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
-                <li class="nav-item"><a class="nav-link disabled" href="tel:+380672504939">+38 (067) 250-49-39 </a></li>
-                <li class="nav-item"><a class="nav-link disabled" href="mailto:kari-san@ukr.net" target="_blank">kari-san@ukr.net </a></li>
-                <li class="nav-item custom-select">
-                  <select id="lang" name="lang">
-                    <option value="0">UA</option>
-                    <option value="1">RU</option>
-                  </select>
-                </li>
-                <li class="nav-item custom-select">
-                  <select id="curr" name="curr">
-                    <option value="12">UAH</option>
-                    <option value="13">USD</option>
-                    <option value="13">EUR</option>
-                  </select>
-                </li>
-              </ul>
+              <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse">
+                <ul class="navbar-nav mr-auto">                     
+                  <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Новости</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Галерея</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Отзывы</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="navbar-collapse collapse w-100 order-2 dual-collapse left-menu">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link disabled" href="tel:+380672504939">+38 (067) 250-49-39 </a></li>
+                  <li class="nav-item"><a class="nav-link disabled" href="mailto:kari-san@ukr.net" target="_blank">kari-san@ukr.net </a></li>
+                  <li class="nav-item custom-select">
+                    <select id="lang" name="lang">
+                      <option value="0">UA</option>
+                      <option value="1">RU</option>
+                    </select>
+                  </li>
+                  <li class="nav-item custom-select">
+                    <select id="curr" name="curr">
+                      <option value="12">UAH</option>
+                      <option value="13">USD</option>
+                      <option value="13">EUR</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -51,7 +57,7 @@
     <div class="container no-padding">
       <div class="row">
         <div class="col-md-2 col-lg-2 col-xs-12">
-          <div class="logo"><img src="img/logo-kari-san.jpg" alt="Kari-san" srcset="img/logo-kari-san@2x.jpg 800w, img/logo-kari-san@3x.jpg 1200w"></div>
+          <div class="logo"><img src="img/logo.svg" alt="Kari-san"></div>
         </div>
         <div class="col-md-10 col-lg-10 col-xs-12">
           <div class="container no-padding" id="sticky">
@@ -61,27 +67,28 @@
                   <ul class="navbar-nav user">
                     <form class="form-inline my-2 my-lg-0 search">
                       <input class="form-control search__field" type="search" placeholder="Что вы ищете?" aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0 search__submit" type="submit"><i class="fa fa-2x fa-search" aria-hidden="true"></i></button>
+                      <button class="btn btn-outline-success my-2 my-sm-0 btn-search" type="submit"><i class="fa fa-2x fa-search" aria-hidden="true"></i></button>
                     </form>
-                    <li class="nav-item pull-right"><a class="nav-link" href="#"><i class="fa fa-3x fa-shopping-cart"></i><span class="num">3</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-3x fa-heart"></i><span class="num">3</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-3x fa-user"></i><span class="num">3</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-2x fa-heart"></i><span class="num">4</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-2x fa-shopping-cart"></i><span class="num">4</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-2x fa-user"></i><span class="num">4</span></a></li>
                   </ul>
                 </nav>
               </div>
             </div>
             <div class="row no-gutters">
               <hr class="nav-hr">
-              <nav class="navbar navbar-expand-lg cat-box"><a class="navbar-brand" href="#">Категории</a>
+              <nav class="navbar navbar-expand-lg cat-box"><a class="navbar-cat" href="#">Категории</a>
                 <button class="cat-button navbar-toggler" type="button" data-toggle="collapse" data-target="#cat" aria-expanded="false" aria-label="Toggle category"><span><i class="fa fa-th"></i></span></button>
-                <div class="collapse navbar-collapse" id="cat">
-                  <ul class="cat navbar-nav mr-auto"></ul>
-                  <li class="cat-item nav-item"><a class="nav-link" href="#">постельное белье</a></li>
-                  <li class="cat-item nav-item"><a class="nav-link" href="#">полотенца</a></li>
-                  <li class="cat-item nav-item"><a class="nav-link" href="#">одеяла</a></li>
-                  <li class="cat-item nav-item"><a class="nav-link" href="#">наматрасники</a></li>
-                  <li class="cat-item nav-item"><a class="nav-link" href="#">покрывала</a></li>
-                  <li class="cat-item nav-item"><a class="nav-link" href="#">подушки</a></li>
+                <div class="collapse navbar-collapse cat-mobile-menu" id="cat">
+                  <ul class="cat navbar-nav mr-auto">
+                    <li class="cat-item nav-item"><a class="nav-link" href="#">постельное белье</a></li>
+                    <li class="cat-item nav-item"><a class="nav-link" href="#">полотенца</a></li>
+                    <li class="cat-item nav-item"><a class="nav-link" href="#">одеяла</a></li>
+                    <li class="cat-item nav-item"><a class="nav-link" href="#">наматрасники</a></li>
+                    <li class="cat-item nav-item"><a class="nav-link" href="#">покрывала</a></li>
+                    <li class="cat-item nav-item"><a class="nav-link" href="#">подушки</a></li>
+                  </ul>
                 </div>
               </nav>
             </div>

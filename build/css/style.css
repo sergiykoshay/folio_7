@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .btn-custom {
   text-transform: uppercase; }
   .btn-custom--slider {
@@ -35,6 +36,27 @@
         background-color: #633b63;
         transition: .2s bottom ease-in-out; }
 
+.btn-search {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-right: 32px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 50px;
+  border-radius: 0 50px 50px 0;
+  background-color: #fff; }
+  .btn-search:hover {
+    background-color: #633b63; }
+  .btn-search:hover i {
+    color: #fff;
+    transition: .4s color linear; }
+  .btn-search i {
+    color: #633b63;
+    padding: 0 6px;
+    font-size: 20px; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -58,23 +80,39 @@ body {
   height: 100%;
   background-color: #fff; }
 
+.left-menu {
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .left-menu > ul {
+    margin: 0 0 0 50%;
+    padding: 0 0 0 28px; }
+    .left-menu > ul > li {
+      margin: 0 0 0 -4px; }
+      .left-menu > ul > li:first-child {
+        margin: 0; }
+
 .nav {
   display: inline-flex;
   height: 100%;
   width: 100%;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  padding: 1px 0 0 0; }
   .nav-item:first-child {
-    text-align: left; }
+    text-align: left;
+    width: auto;
+    padding-right: 0; }
   .nav-item:first-child .nav-link {
     padding-left: 0;
-    margin-left: 0; }
+    margin-left: -4px; }
   .nav-link {
     display: inline;
     color: #ffffff;
     line-height: 40px;
-    padding: 20px;
+    padding-left: 6px;
+    padding-right: 27px;
     text-decoration: none;
-    font-weight: 900; }
+    font-weight: 400; }
     .nav-link:hover {
       color: #fbfbfb; }
 
@@ -101,6 +139,7 @@ body {
 
 .search {
   position: relative;
+  top: -3px;
   display: none; }
   .search-page-link {
     position: absolute;
@@ -113,73 +152,73 @@ body {
     height: 50px;
     border-radius: 60px;
     background-color: #f6f6fb;
+    min-width: 750px;
     border: none;
-    min-width: 600px;
-    padding-left: 20px;
+    max-width: 100%;
+    margin: 0 32px 16px 0;
+    padding-left: 24px;
     outline: none;
-    outline-offset: 0; }
-  .search__submit {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    height: 50px;
-    border-radius: 0 50px 50px 0;
-    background-color: #fff; }
-    .search__submit:hover {
-      background-color: #633b63; }
-    .search__submit:hover i {
-      color: #fff;
-      transition: .4s color linear; }
-    .search__submit i {
-      color: #633b63;
-      padding: 0 5px; }
+    outline-offset: 0;
+    font-size: 14px;
+    line-height: 14px; }
 
 .user {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 15px 0 0 0; }
+  padding: 20px 0 0 0;
+  margin-right: -20px; }
+  .user li:last-child a {
+    margin-right: 0; }
   .user a {
-    padding: 0 15px;
+    padding: 0 14px;
     color: #ddd;
     position: relative;
     display: block;
     text-decoration: none;
-    margin: 0 15px; }
+    margin: 5px 16px; }
+    .user a > i {
+      font-size: 32px; }
     .user a .num {
       position: absolute;
       right: -10px;
-      top: 0px;
+      top: 2px;
       color: #fff;
       background-color: red;
       display: block;
       border-radius: 100%;
-      width: 20px;
-      height: 20px;
-      line-height: 20px;
-      text-align: center; }
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 8px; }
 
 .nav-hr {
   height: 2px;
   width: 100%;
   margin: 0; }
 
+.cat-box {
+  padding: 0; }
+
 .cat-item {
-  display: inline-flex;
-  justify-content: center; }
+  list-style: none;
+  padding: 4px 19px 4px 0; }
+  .cat-item:last-child {
+    padding-right: 0;
+    margin-right: 0; }
   .cat-item a {
-    padding: 12px 12px;
     text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
     color: #aca8bf; }
     .cat-item a:hover {
       color: #1a1a1a; }
 
-.navbar-brand {
+.navbar-cat {
   text-transform: uppercase;
   font-weight: 400;
   color: #aca8bf; }
