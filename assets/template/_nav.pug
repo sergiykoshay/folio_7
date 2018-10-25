@@ -3,9 +3,9 @@ a(href="#").search-page-link
 nav.navbar.navbar-expand-lg.nav-box.nav-fill
   button#burger.navbar-toggler.collapsed(type='button', data-toggle='collapse', data-target='.dual-collapse', aria-controls='nav', aria-expanded='false', aria-label='Toggle navigation')
     span.mx-1.mx-2.close
-        i.fa.fa-times
+        i.zmdi.zmdi-close
     span.navbar-toggler-icon
-        i.fa.fa-bars
+        i.zmdi.zmdi-menu
   #nav.navbar-collapse.navbar-expand-md
     .container.no-padding
         .row.no-gutters
@@ -45,18 +45,18 @@ nav.navbar.navbar-expand-lg.nav-box.nav-fill
                                 form.form-inline.my-2.my-lg-0.search
                                     input.form-control(type='search', placeholder='Что вы ищете?', aria-label='Search').search__field
                                     button.btn.btn-outline-success.my-2.my-sm-0(type='submit').btn-search
-                                        i(aria-hidden="true").fa.fa-2x.fa-search
+                                        i.zmdi.zmdi-search
                                 li.nav-item
                                     a.nav-link(href='#')
-                                        i.fa.fa-2x.fa-heart
+                                        i.zmdi.zmdi-favorite
                                         span.num 4
                                 li.nav-item
                                     a.nav-link(href='#')
-                                        i.fa.fa-2x.fa-shopping-cart
+                                        i.zmdi.zmdi-shopping-cart
                                         span.num 4
                                 li.nav-item
                                     a.nav-link(href='#')
-                                        i.fa.fa-2x.fa-user
+                                        i.zmdi.zmdi-account
                                         span.num 4
                 .row.no-gutters
                     hr.nav-hr
@@ -64,7 +64,7 @@ nav.navbar.navbar-expand-lg.nav-box.nav-fill
                         a.navbar-cat(href='#') Категории
                         button.cat-button.navbar-toggler(type='button', data-toggle='collapse', data-target='#cat', aria-expanded='false', aria-label='Toggle category')
                             span
-                                i.fa.fa-th
+                                i.zmdi.zmdi-apps
                         #cat.collapse.navbar-collapse.cat-mobile-menu
                             ul.cat.navbar-nav.mr-auto
                                 each cat in ["постельное белье", "полотенца", "одеяла", "наматрасники", "покрывала" , "подушки" ]

@@ -12,6 +12,7 @@ body{
     line-height: normal;
     letter-spacing: normal;
     //overflow: hidden;
+    min-width: 320px;
 }
 .no-padding{
     padding: 0;
@@ -244,8 +245,8 @@ body{
     background-color: $color-1;
     &:after{
         position: absolute;
-        font-family: "FontAwesome";
-        content: '\f107';
+        font-family: "Material-Design-Iconic-Font";
+        content: '\f2f9';
         top: -0px;
         right: 8px;
         width: 0;
@@ -254,8 +255,8 @@ body{
 
     }
     &.select-arrow-active:after{
-        font-family: "FontAwesome";
-        content: '\f106';
+        font-family: "Material-Design-Iconic-Font";
+        content: '\f2f8';
         line-height: 40px;
         top: 0;
         position: absolute;
@@ -610,9 +611,9 @@ body{
             padding: 1em;
             color: #999;
             &::before{
-                font-family: "FontAwesome";
+                font-family: "Material-Design-Iconic-Font";
+                content: '\f337';
                 font-weight: 400;
-                content: '\f017';
                 display: inline-block;
                 padding: 10px 14px;
                 color: #999;
