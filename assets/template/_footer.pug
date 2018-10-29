@@ -1,0 +1,28 @@
+-var mainMenu = ['О компании', 'Новости', 'Галерея', 'Отзывы', 'Контакты'];
+-var catMenu = ['Полотенца','Покрывала','Подушки','Одеяла','Постельное белье'];
+-var contactMenu = ['+38 (067) 250-49-39','+38 (067) 250-02-04','+38 (093) 654-17-24','kari-san@ukr.net'];
+-var socialMenu = ['facebook','instagram','twitter','youtube'];
+mixin footer_menu(menu_arr,heading)
+    .col-lg-3.col-md-3.col-xs-12
+        h4.footer-heading=heading 
+        ul.footer-menu
+            each val in menu_arr
+                li.footer-menu__item
+                    a(href="#").footer-menu__link=val
+footer.footer
+    .container
+        .row
+            +footer_menu(mainMenu,'О Kari-san')
+            +footer_menu(catMenu,'продукция')
+            +footer_menu(contactMenu,'контакты')
+            .col-lg-3.col-md-3.col-xs-12
+                h4.footer-heading Мы в соцсетях
+                ul.footer-menu
+                    li.footer-menu__item
+                        ul.social-menu
+                            each val in socialMenu
+                                li.social-menu__item
+                                    a(href="#").social-menu__link
+                                        i.zmdi(class="zmdi-hc-2x  zmdi-" + val)
+
+                

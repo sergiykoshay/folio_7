@@ -540,3 +540,47 @@ body {
     .respond--item .name {
       font-size: 1.3em;
       font-style: italic; }
+
+.footer {
+  background-color: #633b63;
+  padding: 40px 0; }
+  .footer-heading {
+    font-size: 18px;
+    color: #A8A4BB;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: inherit;
+    padding: 12px 0; }
+  .footer-menu__item {
+    padding: 8px 0; }
+  .footer-menu__link {
+    font-family: inherit;
+    color: #fff;
+    padding: 0;
+    text-decoration: none; }
+    .footer-menu__link:hover {
+      text-decoration: none;
+      color: #A8A4BB; }
+
+.social-menu {
+  display: inline-flex;
+  flex-direction: row; }
+  .social-menu__item {
+    width: 100%;
+    margin: 0 5px; }
+  .social-menu__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    margin: auto;
+    color: #633b63;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    transition: .3s all ease-in-out; }
+    .social-menu__link:hover {
+      background-color: #633b63;
+      color: #fff;
+      transition: .3s all ease-in-out; }
